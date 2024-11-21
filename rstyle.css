@@ -4,24 +4,40 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.header{
+    background: #cee3f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: 4px solid rgba(15, 14, 14, 0.3);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+.hname span{
+    color: #38a0a1;
+}
 body{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #0D3839, #8DB8B9, #F9EBEA );
+    background: linear-gradient(135deg, #2d9092, #051c2d);
 }
 .container{
     max-width: 700px;
-    width: 100%;
+    width: 70%;
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
+    padding-top: 100px;
+
 }
 .container .title{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 10px;
 }
 .container .title span{
@@ -60,4 +76,18 @@ form .user-details .input-box{
     font-size: 16px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+}
+.user-details .input-box button{
+    margin-top: 2px;
+    display: inline-block;
+    padding: 10px 7rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(135deg, #0f4065,#126e6f);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.user-details .input-box button:hover{
+    color: #051c2d;
+    background:#fff;
 }
